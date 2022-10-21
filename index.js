@@ -20,3 +20,21 @@
 // console.log(atclassname);  output:headingattribute changed index.js:20
 
 
+    // InnerHtml
+// var ele=document.querySelector("h1")
+// console.log(ele)
+// console.log(ele.innerHTML) //InnerHtml <b class="bold">html</b> code
+// ele.innerHTML="<strong>Haii innerhtml</strong>"
+// console.log(ele.innerHTML) //<strong>Haii innerhtml</strong>
+
+// //Inner Text
+// var ele=document.querySelector("h2")
+// console.log(ele.innerText) //Innertext html code
+// ele.innerText="Hello innner text" //Hello innner text
+// console.log(ele.innerText)
+
+// //TextContent
+// var ele=document.querySelector(".textcontent")
+// console.log(ele.textContent) //TextContent html code
+// ele.textContent="Hello text content" //Hello text content
+// console.log(ele.textContent) 
