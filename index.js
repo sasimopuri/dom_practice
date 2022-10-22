@@ -38,3 +38,15 @@
 // console.log(ele.textContent) //TextContent html code
 // ele.textContent="Hello text content" //Hello text content
 // console.log(ele.textContent) 
+
+//Event listners
+// var ele=document.querySelector(".welcome")
+// let old=ele.innerText;
+// ele.addEventListener("mouseover",()=>{
+//     ele.innerText="Welcome Back!!";
+// })
+// ele.addEventListener("mouseleave",()=>{
+//     ele.innerText=old;
+// })
+
+console.log($(".welcome").text())
