@@ -49,4 +49,5 @@
 //     ele.innerText=old;
 // })
 
-console.log($(".welcome").text())
+var ele=$(".welcome")
+ele.css("color","red")
