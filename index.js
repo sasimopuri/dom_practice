@@ -49,5 +49,27 @@
 //     ele.innerText=old;
 // })
 
-var ele=$(".welcome")
-ele.css("color","red")
+// var ele=$(".welcome")
+// ele.css("color","red")
+
+// Promises
+function printalpha(alpha,time)
+{
+    return new Promise((resolve,reject)=>{
+        setTimeout(()=>{
+            console.log(alpha)
+            resolve("Promise has been resolved")
+        },time)
+    })
+}
+    
+
+function printvowels()
+{
+    printalpha("A",2000)
+    .then(()=>printalpha("E",2000))
+    .then(()=>printalpha("I",1000))
+    .then(()=>printalpha("O",4000))
+    .then(()=>printalpha("U",1000))
+}
+printvowels()
