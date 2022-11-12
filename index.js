@@ -53,23 +53,53 @@
 // ele.css("color","red")
 
 // Promises
-function printalpha(alpha,time)
-{
-    return new Promise((resolve,reject)=>{
-        setTimeout(()=>{
-            console.log(alpha)
-            resolve("Promise has been resolved")
-        },time)
-    })
-}
+// function printalpha(alpha,time)
+// {
+//     return new Promise((resolve,reject)=>{
+//         setTimeout(()=>{
+//             console.log(alpha)
+//             resolve("Promise has been resolved")
+//         },time)
+//     })
+// }
     
 
-function printvowels()
-{
-    printalpha("A",2000)
-    .then(()=>printalpha("E",2000))
-    .then(()=>printalpha("I",1000))
-    .then(()=>printalpha("O",4000))
-    .then(()=>printalpha("U",1000))
-}
-printvowels()
+// function printvowels()
+// {
+//     printalpha("A",2000)
+//     .then(()=>printalpha("E",2000))
+//     .then(()=>printalpha("I",1000))
+//     .then(()=>printalpha("O",4000))
+//     .then(()=>printalpha("U",1000))
+// }
+// printvowels()
+
+// // function local()
+// {
+//     // let task=document.querySelector("#text").value;
+//     // let tasks=localStorage.getItem("tasks") || [[]]
+//     // console.log(task)
+//     // localStorage.setItem('tasks',JSON.stringify([...JSON.parse(localStorage.getItem(tasks)) || [],task]))
+
+    
+// }
+
+// objects
+// let course={
+//     id:10,
+//     subject:'maths',
+//     topic:['as','we','ewq'],
+//     get:function (a) {
+
+//         console.log(a);
+//     }
+// }
+
+// course.get()
+
+// Array destructor
+// arr=[1,2,3,4]
+// let [a,b,c,d,e=1]=arr
+// console.log(a,b,c,d,e);
+
+// 
