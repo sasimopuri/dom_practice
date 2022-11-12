@@ -118,3 +118,13 @@
 // console.log(numcombined); //[1, 2, 3, 4, 5, 6, 7, 8, 9, 0]
 // let [a,b,...remaining]=num1;
 // console.log(remaining); //[3, 4, 5]
+
+// Destructing in objects : It is based on properties of an object
+// let obj1={id:1,
+//           nameis:'sasi',
+//           age:22,
+//           place:'kadiri'
+// }
+
+// let {nameis,place}=obj1;
+// console.log(nameis,place);
