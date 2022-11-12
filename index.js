@@ -125,6 +125,70 @@
 //           age:22,
 //           place:'kadiri'
 // }
-
+// 
 // let {nameis,place}=obj1;
 // console.log(nameis,place);
+// let {nameis,place}=obj1;
+// console.log(nameis,place,phone=0); //DEfault
+
+// Destructing for nested objects
+
+
+//call apply bind
+// let full_name={
+//     fname:'sasi',
+//     lname:'kumar',
+//     printname:function(){
+//         console.log('firstname '+this.fname+' lastname '+this.lname);
+//     }
+// }
+// full_name.printname() //firstname sasi lastname kumar
+
+// let full_name2={
+//     fname:'mythri',
+//     lname:'udagandla'
+// }
+
+// full_name.printname.call(full_name2) //firstname mythri lastname udagandla
+
+// apply is same as bind but passing parameters is different
+
+// without obj i.e., function outside obj
+// printname=function(){
+//     console.log('firstname '+this.fname+' lastname '+this.lname);
+// }
+// let full_name={
+//     fname:'sasi',
+//     lname:'kumar'
+// }
+
+// let full_name2={
+//         fname:'mythri',
+//         lname:'udagandla'
+//     }
+// 
+// printname.call(full_name2)
+
+// with extra parameters
+
+// printname=function(place,country){
+//     console.log('firstname '+this.fname+' lastname '+this.lname,' place:' +place+' country:' +country);
+// }
+// let full_name={
+//     fname:'sasi',
+//     lname:'kumar'
+// }
+
+// let full_name2={
+//         fname:'mythri',
+//         lname:'udagandla'
+//     }
+
+// printname.call(full_name,'kadiri','India') //firstname sasi lastname kumar  place:kadiri country:India
+//using apply need to pass extra arguments in list
+// printname.apply(full_name,['kadiri','India']) //firstname sasi lastname kumar  place:kadiri country:India
+
+// Bind returns function with binding parameters
+
+// let bindexample = printname.bind(full_name,'kadiri','India')
+// bindexample() //firstname sasi lastname kumar  place:kadiri country:India
