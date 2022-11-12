@@ -102,4 +102,19 @@
 // let [a,b,c,d,e=1]=arr
 // console.log(a,b,c,d,e);
 
-// 
+// array spread operator and rest operator
+
+// function f(input1,...inputarray){
+//     console.log("input1",input1);
+//     console.log("input array",inputarray);
+// }
+
+// f(1,2,3,4,5,6,7,8,9,0)
+
+//  array spread
+// num1=[1,2,3,4,5]
+// num2=[6,7,8,9,0]
+// numcombined=[...num1,...num2]
+// console.log(numcombined); //[1, 2, 3, 4, 5, 6, 7, 8, 9, 0]
+// let [a,b,...remaining]=num1;
+// console.log(remaining); //[3, 4, 5]
